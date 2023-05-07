@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            width: 300px;
+            background-color: blanchedalmond;
+            margin-left: 400px;
+            padding: 30px;
+        }
+        .label{
+            border: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <h2 style="text-align: center;">Rigester and Enter Student details</h2>
+    <form action="insert" method="post">
+        <label class="label">Name:</label>
+        <input type="text" placeholder="Enter your Name" name="name"><br>
+        <label>Mobile:</label>
+        <input type="tel" placeholder="Enter your phone" pattern="{0-9}[10]" name="mobile"><br>
+        <label>Email ID:</label>
+        <input type="email" placeholder="Enter your Email id" name="email"><br>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Fe-male<br>
+        <label>DOB:</label>
+        <input type="date"  name="dob"><br>
+        <label>Address:</label><br>
+        <textarea rows="4" name="address"></textarea><br>
+        <label>Languages:</label>
+        <input type="checkbox" name="language" value="kannada">Kannada
+        <input type="checkbox" name="language" value="english">English
+        <input type="checkbox" name="language" value="hindi">Hindi
+        <label>Country:</label><br>
+        <select name="country">
+            <option>India</option>
+            <option>westIndis </option>
+            <option>Shri lanka</option>
+        </select><br>
+        <!-- <input type="checkbox" id="skill1" name="skill1" value="java">
+         <label for="vehicle1"> Java</label>
+        <input type="checkbox" id="skill2" name="skill2" value="sql">
+        <label for="vehicle2"> SQL</label>
+        <input type="checkbox" id="skill3" name="skill3" value="Web">
+        <label for="vehicle3"> Web</label><br> -->
+        <button type="submit"> Submit</button>
+        <button type="reset">Cancel</button>
+        
+        
+        
+    </form>
+    <a href="home.html"><button>Home</button></a>
+    </div>
+</body>
+</html>
